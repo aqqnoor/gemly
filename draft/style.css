@@ -1,0 +1,122 @@
+/* Основные стили для всех экранов */
+/**body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}**/
+
+/* Контейнер на весь экран */
+.container {
+    max-width: 100%;
+    padding: 40px;
+}
+
+/* Стили только для мобильных устройств */
+@media (max-width: 768px) {
+    .menu {
+        font-size: 14px;
+    }
+
+    /* Стилизуйте элементы, ориентируясь на удобство пользователя */
+    .button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'PlayfairDisplay-Regular';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Medium';
+    src: url('../fonts/PlayfairDisplay-Medium.ttf');
+}
+@font-face {
+    font-family: 'Karla-Medium';
+    src: url("../fonts/Karla-Medium.ttf");
+}
+@font-face {
+    font-family: 'Karla-SemiBold';
+    src: url('../fonts/Karla-SemiBold.ttf');
+}
+
+.light-theme{
+    color:#FFFDEE;
+}
+.name{
+    color: #403931;
+    font-family: 'PlayfairDisplay-Regular', sans-serif;
+    font-size: 48px;
+}
+.photo{
+    position: relative;
+    height: 900px;
+    width: 511px;
+    border-radius: 40px;
+    overflow: hidden;
+
+}
+.photo img {
+    height: 100%; /* Растягивает изображение по высоте контейнера */
+    width: 100%; /* Сохраняет пропорции изображения */
+    object-fit: cover; /* Масштабирует изображение, сохраняя его обрезанным */
+
+}
+.bas_name {
+    position: absolute;
+    top: 677px; /* Отступ от верхней части */
+    right: 28px;/* Отступ от левой части */
+    color: #403931; /* Цвет текста */
+    font-family: 'PlayfairDisplay-Medium', sans-serif;
+    font-size: 80px; /* Размер шрифта */
+    text-align: center;
+}
+.content {
+    position: relative;
+    top: 250px;
+    width: 511px;
+    height: auto; /* Убираем фиксированную высоту, чтобы контент мог адаптироваться */
+    padding: 20px; /* Добавляем отступы внутри контейнера */
+}
+
+.about {
+    text-align: center;
+    color: #403931;
+    font-family: 'Karla-Medium', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px; /* Отступ снизу для разделения блоков */
+}
+
+.history_box {
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-family: 'Karla-Medium', sans-serif;
+    font-size: 20px; /* Размер шрифта для текста о истории */
+    color: #403931; /* Цвет текста */
+    cursor: pointer; /* Курсор указывает на кликабельность */
+    padding: 10px 20px; /* Отступы внутри блока */
+    border: 2px solid #403931; /* Граница для выделения блока */
+    border-radius: 30px; /* Сглаженные углы для истории */
+    transition: background-color 0.3s; /* Плавный переход для фона при наведении */
+}
+
+.history_box:hover {
+    background-color: #f0f0f0; /* Изменение фона при наведении */
+}
+.dev{
+    font-family: 'Karla-SemiBold', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
